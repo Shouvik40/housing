@@ -1,0 +1,19 @@
+/* house.css */
+.house-container {
+  margin: 20px 0;
+}
+
+.house-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.inquiry-icon {
+  cursor: pointer;
+  margin-top: 20px;
+}
