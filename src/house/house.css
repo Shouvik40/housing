@@ -1,19 +1,122 @@
-/* house.css */
 .house-container {
-  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.house-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.house-country {
+  font-size: 18px;
+  color: #777;
+}
+
+.house-address {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.house-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.house-image-container {
+  flex: 1;
 }
 
 .house-image {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.price {
-  font-size: 1.5rem;
+.house-details {
+  flex: 1;
+}
+
+.house-price {
+  font-size: 24px;
   font-weight: bold;
+  color: #4caf50;
+  margin: 10px 0;
+}
+
+.house-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .inquiry-icon {
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.inquiry-icon:hover {
+  transform: scale(1.1);
+}
+
+.inquiry-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+}
+
+.inquiry-form .form-group {
+  margin-bottom: 15px;
+}
+
+.inquiry-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.inquiry-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  transition: border-color 0.3s ease;
+}
+
+.inquiry-form input[type="text"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.inquiry-form .btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inquiry-form .btn:hover {
+  background-color: #45a049;
+}
+
+.inquiry-form .btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

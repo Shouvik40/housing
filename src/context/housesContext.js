@@ -11,7 +11,7 @@ export const HousesProvider = ({ children }) => {
       country: "USA",
       price: 300000,
       likes: 120,
-      photo: "house1",
+      photo: "h2.jpg",
       description: "A beautiful house in the suburbs with a lovely garden and modern amenities.",
     },
     {

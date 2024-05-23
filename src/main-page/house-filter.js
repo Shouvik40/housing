@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import HousesContext from "../context/housesContext";
+import "./main-page.css"; // Ensure you import the CSS file
 
 const HouseFilter = () => {
   const navigate = useNavigate();
@@ -15,13 +16,13 @@ const HouseFilter = () => {
   };
 
   return (
-    <div className="row mt-3">
-      <div className="offset-md-2 col-md-4">Look for your dream house in country:</div>
-      <div className="col-md-4 mb-3">
-        <select className="form-select" onChange={onSearchChange}>
+    <div className="house-filter-container">
+      <div className="house-filter-label">Look for your dream house in country:</div>
+      <div>
+        <select onChange={onSearchChange}>
           {countries.map((c) => (
             <option key={c} value={c}>
-              {c}
+              <div style={{ backgroundColor: "red" }}>{c}</div>
             </option>
           ))}
         </select>

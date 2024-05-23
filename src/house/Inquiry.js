@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./house.css";
 
 const Inquiry = () => {
   const [contactInfo, setContactInfo] = useState({
@@ -16,8 +17,9 @@ const Inquiry = () => {
     console.log(contactInfo);
     //send
   };
+
   return (
-    <form className="mt-2">
+    <form className="inquiry-form">
       <div className="form-group">
         <label htmlFor="name">Name</label>
         <input type="text" className="form-control" placeholder="Name" id="name" value={contactInfo.name} onChange={onChange} />
@@ -30,7 +32,7 @@ const Inquiry = () => {
         <label htmlFor="remarks">Remarks</label>
         <input type="text" id="remarks" className="form-control" placeholder="Remarks" value={contactInfo.remarks} onChange={onChange} />
       </div>
-      <button className="btn btn-primary mt-2" disabled={!contactInfo.name || !contactInfo.email} onClick={onSubmit}>
+      <button className="btn btn-primary" disabled={!contactInfo.name || !contactInfo.email} onClick={onSubmit}>
         Submit
       </button>
     </form>

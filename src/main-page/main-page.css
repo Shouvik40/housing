@@ -12,3 +12,101 @@
   border-radius: 2px;
   background-color: rgb(255, 190, 166);
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+header p {
+  font-size: 18px;
+  color: #777;
+}
+
+.house-filter {
+  margin-bottom: 40px;
+}
+
+.featured-house {
+  margin-bottom: 40px;
+}
+
+.search-results {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+}
+.house-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.house-filter-label {
+  font-size: 16px;
+  color: #333;
+  margin-right: 15px;
+}
+
+.house-filter-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.house-filter-select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .house-filter-container {
+    flex-direction: column;
+  }
+
+  .house-filter-label {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .house-filter-select {
+    max-width: 100%;
+  }
+}
