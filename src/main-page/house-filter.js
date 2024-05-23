@@ -4,7 +4,7 @@ import HousesContext from "../context/housesContext";
 import "./main-page.css"; // Ensure you import the CSS file
 
 const HouseFilter = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); //useHistory changed to useNavigate
   const allHouses = useContext(HousesContext);
 
   const countries = allHouses ? Array.from(new Set(allHouses.map((h) => h.country))) : [];
